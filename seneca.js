@@ -7,8 +7,7 @@
  */
 exports.isValidEmail = function (email) {
     // TODO: needs to be implemented
-  const val = /\S+@myseneca.ca+/;
-  return val.test(email);
+   return /@myseneca.ca$/.test(email);
 };
 
 /**
