@@ -7,7 +7,16 @@
  */
 exports.isValidEmail = function (email) {
     // TODO: needs to be implemented
-   return /@myseneca.ca$/.test(email);
+  if (/@myseneca.ca$/.test(email) === true) {
+    return true;
+  }
+  if (/@senecacollege.ca$/.test(email) === true) {
+    return true;
+  }
+  if (/@senecac.on.ca$/.test(email) === true) {
+    return true;
+  }
+  return false;
 };
 
 /**
@@ -16,6 +25,9 @@ exports.isValidEmail = function (email) {
  */
 exports.formatSenecaEmail = function (name) {
     // TODO: needs to be implemented
+  if (name == null) {
+    return false;
+  }
   const email = `${name}@myseneca.ca`;
   return email;
 };
