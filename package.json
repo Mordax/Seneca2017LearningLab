@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Mordax/Seneca2017LearningLab#readme",
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": ">=4.18.2",
     "eslint-config-airbnb-base": "^11.1.2",
     "eslint-plugin-import": "^2.2.0",
     "jest": "^19.0.2"
